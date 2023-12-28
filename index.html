@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+
+    <nav id="desktop-nav">
+    <div class="logo">
+        <!-- <img src="assets/Anurag Mishra.png" alt="logo"> -->
+        Anurag Mishra
+    </div>  
+    <div>
+        <ul class="nav-links">
+            <li class="nav-links"><a href="#about">About</a></li>
+            <li class="nav-links"><a href="#projects">Projects</a></li>
+            <li class="nav-links"><a href="#contact">contact</a></li>
+            
+        </ul>
+    </div>  
+    </nav>
+
+    <!-- HAMBURGER NAVIGATION BAR -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <!-- <img src="assets/Anurag Mishra.png" alt="logo"> -->
+            Anurag Mishra
+        </div>  
+        <div class="hamburger-menu" >
+            <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-links"><a href="#about" onclick="togglemenu()">About</a></li>
+                <li class="nav-links"><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li class="nav-links"><a href="#contact" onclick="togglemenu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- START OF CONTENTS -->
+    <section id="profile">
+        <!-- profile image -->
+        <div class="section__pic-container">
+            <img class=""src="assets/Untitled design (2).png" alt="anurag mishra Profile picture">
+        </div>
+            <!-- welcom text -->
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="tital">Anurag Mishra</h1>
+                <p class="section__text__p2">Web Developer</p>
+                <!-- download cv button -->
+                <div class="btn-container">
+                   <button class="btn btn-color-2" onclick="window.open('./assets/my_resume.pdf')">Download CV
+                </button>
+                <!-- Contect section button -->
+               
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contect Me
+                 </button>
+                </div>
+                <!-- SOCIAL ACCOUNTS LINK -->
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="my linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/anurag-mishra8'">
+
+                    <img src="./assets/github.png" alt="my linkedin" class="icon" onclick="location.href='https://github.com/anurag262000'">
+
+               
+                </div>
+            </div>
+        
+        
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="sapperat">
+        <p class="section__text__p1">Get To Know More</p>
+        <p class="title">About Me</p>
+    </div>
+        <div class="section-container">
+            <div class="section__pic-container-2">
+                <img src="./assets/about-section-profile.png" alt="profile pic" class="about-pic" >
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                    <img src="./assets/experience.png" alt="exp icon" class="icon">
+                    <h3>Experience</h3>
+                    <p> MAY 2023 - AUG 2023 
+                       
+                       <br> Artist and Management Associate</p>
+                </div>
+            
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>AUG 2020 - Present
+                        <br>B.C.A (Bachelor Of Computer Application)
+                         <br>Seth Jai Parkash Mukand Lal Institute of Engineering &
+                        Technology
+                        </p>
+                </div>
+            </div>
+                <div class="text-container">
+                    <p>I am a creative individual with an entrepreneurial mindset. I have always been passionate about designing and</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+  
+     <!-- Experience SECTION -->
+     <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- FRONTEND -->
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>BOOTSTRAP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>React + Redux</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Material-UI</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            
+
+              <!-- BACKEND -->
+              
+              <div class="details-containers">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>My Sql</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Php</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>git version cantrol</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>  
+        </div>
+     </section>
+    
+    <!-- javascript section -->
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
