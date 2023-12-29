@@ -225,13 +225,23 @@ section{
 
 
 
-.sapperat{
-    border-top: 0.1rem  solid rgb(53, 53, 53);
-    border-bottom: 0.1rem  solid rgb(53, 53, 53);
-    margin-bottom: 1rem;
-}
-
 /* ABOUT SECTION */
+.dark_section__text__p1 {
+    text-align: center;
+    color: white;
+    
+}
+.dark_title{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(198, 197, 197);
+}
+.dark_text-container p{
+    color: aliceblue;
+}
+.block2,.block4{
+    background-color: rgb(53, 53, 53);
+}
 #about{
     position: relative;
 }
@@ -273,7 +283,110 @@ section{
     width: 400px;
     margin: auto 0;
 }
+/* EXPERIENCE | SKILLS SECTIOM */
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem; /* Adjust the gap as needed */
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  article {
+    flex: 0 0 calc(33.33% - 2rem); /* Set width for three items per row with some gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally within each article */
+    gap: 0.5rem;
+    margin: 1rem; /* Add margin for spacing between items */
+  }
+  
+article .icon{
+    cursor: default;
+}
+/* 
+PROJECT SECTION */
+#projects{
+    position: relative;
+}
 
+.color-container{
+    border-color: rgb(163,163,163);
+    background-color: #fff;
+}
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
 
+}
+.project-title{
+    margin: 1rem;
+    color:rgb(0, 0, 0)
+}
+.project-btn{
+    color: black;
+    border-color: rgb(163,163,163);
+}
 
+/* CONTECT SECTION */
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
 
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: (250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.conact-icon{
+    cursor: default;
+}
+.email-icon{
+    height: 2.5rem;
+}
+
+/* footer section */
+
+footer{
+    height: 26vh;
+    margin: o 1rem;
+}
+
+footer p{
+    text-align: center;
+}
