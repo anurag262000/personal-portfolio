@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
+    <link rel="icon" href="./assets/coding.svg">
+    <script src="https://kit.fontawesome.com/9ca9187971.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -59,7 +61,7 @@
                 <p class="section__text__p2">Web Developer</p>
                 <!-- download cv button -->
                 <div class="btn-container">
-                   <button class="btn btn-color-2" onclick="window.open('./assets/my_resume.pdf')">Download CV
+                   <button class="btn btn-color-2" onclick="window.open('./assets/resume/ANURAG MISHRA.pdf')">Download CV
                 </button>
                 <!-- Contect section button -->
                
@@ -161,7 +163,7 @@
                             <img src="./assets/checkmark.png" alt="experience icon" class="icon">
                             <div>
                                 <h3>JAVASCRIPT</h3>
-                                <p>Basic</p>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -215,6 +217,13 @@
                             <p>basic</p>
                         </div>
                     </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Mongo DB</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
                     
                 </div>
             </div>
@@ -232,54 +241,98 @@
      <section id="projects">
         <p class="dark_section__text__p1">Browse My Recent</p>
         <h1 class="dark_title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png" alt="project 1" class="project-img">
+        <div id="card-container">
+            <div class="project-card">
+                <img src="./assets/projects/weatherapp.png" alt="Project Image">
+                <div class="project-details">
+                  <h2>Weather App</h2>
+                  <ul class="tech-tree">
+                    <li>React JS</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Open Weather Api</li>
+                   
+                  </ul>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://weather-live-react.netlify.app/'">Live Demo
+                 </button>
+                 <!-- Contect section button -->
+               
+                     <button class="btn btn-color-1" onclick="location.href='https://github.com/anurag262000/weatherApp-Reactjs?tab=readme-ov-file'" >Github
+                  </button>
+                 </div>
                 </div>
-                <h2 class="experience-sub-title project-title">Project one</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anurag262000/custom-codepen-clone'">
-                       Git Hub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://custom-codepen-clone.netlify.app/'">
-                       Live Demo
-                    </button>
-                </div>
-            </div>
+              </div>
 
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png" alt="project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anurag262000/custom-codepen-clone'">
-                       Git Hub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://custom-codepen-clone.netlify.app/'">
-                       Live Demo
-                    </button>
-                </div>
-            </div>
+              <div class="project-card">
+                <img src="./assets/projects/movix-app.png" alt="Project Image">
 
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png" alt="project 1" class="project-img">
+                <div class="project-details">
+                  <h2>Weather App</h2>
+                  <ul class="tech-tree">
+                    <li>React+Redux</li>
+                    <li>HTML 5</li>
+                    <li>SCSS</li>
+                    <li>TMDB Api</li>
+                   
+                  </ul>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://movie-info-app-sand.vercel.app/'">Live Demo
+                 </button>
+                 <!-- Contect section button -->
+               
+                     <button class="btn btn-color-1" onclick="location.href='https://github.com/anurag262000/movie-info-app'" >Github
+                  </button>
+                 </div>
                 </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/anurag262000/custom-codepen-clone'">
-                       Git Hub
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://custom-codepen-clone.netlify.app/'">
-                       Live Demo
-                    </button>
+              </div>
+
+              <div class="project-card">
+                <img src="./assets/projects/codepen clone.png" alt="Project Image">
+                <div class="project-details">
+                  <h2>Codepen Code Editor</h2>
+                  <ul class="tech-tree">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JAVASCRIPT</li>
+                   
+                  </ul>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://custom-codepen-clone.netlify.app/'">Live Demo
+                 </button>
+                 <!-- Contect section button -->
+               
+                     <button class="btn btn-color-1" onclick="location.href='https://github.com/anurag262000/custom-codepen-clone'" >Github
+                  </button>
+                 </div>
                 </div>
-            </div>
+              </div>
+
+              <div class="project-card">
+                <img src="./assets/projects/petshop.png" alt="Project Image">
+                <div class="project-details">
+                  <h2>PETDOG/PETSHOP LANDING PAGE</h2>
+                  <ul class="tech-tree">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>BOOTSTRAP</li>
+                   
+                  </ul>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://pet-shop-dogs.netlify.app/'">Live Demo
+                 </button>
+                 <!-- Contect section button -->
+               
+                     <button class="btn btn-color-1" onclick="location.href='https://github.com/anurag262000/petshop-dogs'" >Github
+                  </button>
+                 </div>
+                </div>
+              </div>
         </div>
-    </div>
+       
+
+        
+          
         <img src="./assets/right.png" alt="arrow" class="icon arrow" onclick="location.href='./#contact'">
      </section>
     </div>
